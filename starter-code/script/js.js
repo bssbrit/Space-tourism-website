@@ -115,18 +115,13 @@ let objeto = {
 };
 
 let list = document.querySelectorAll("#planets  li");
-// Event Listener for the 3 menus
-// Add a click event listener to each <li> element
 list.forEach((item) => {
   item.addEventListener("click", () => {
-    // const value = item.getAttribute("value");
     renderPlanet(item.value);
     console.log(item.value);
   });
 });
-/* 
-const displayPlanet
- */
+
 let crewlist = document.querySelectorAll("#crewOptions li");
 console.log(crewlist);
 crewlist.forEach((item) => {
@@ -143,7 +138,6 @@ techlist.forEach((item) => {
 });
 console.log(techlist);
 
-//create 3 function to display each type of information "destination crew technology"
 console.log(objeto.destinations[0].images[0]);
 const renderPlanet = (itemValue) => {
   let planetImg = document.getElementById("planetImg");
@@ -157,14 +151,12 @@ const renderPlanet = (itemValue) => {
   distance.textContent = objeto.destinations[itemValue].distance;
   let travelTime = document.getElementById("travel");
   travelTime.textContent = objeto.destinations[itemValue].travel;
-  //distance
-  //travel
 };
 
 const renderCrew = (itemValue) => {
   let crewPhoto = document.getElementById("crewPhoto");
   crewPhoto.style.backgroundImage = `url(${objeto.crew[itemValue].images.png}) `;
-  //(${objeto.crew[itemValue].images.png});
+
   let crewJob = document.getElementById("crewJob");
   crewJob.textContent = objeto.crew[itemValue].role;
   let crewName = document.getElementById("crewName");
@@ -174,9 +166,6 @@ const renderCrew = (itemValue) => {
 };
 
 const renderTech = (itemValue) => {
-  /* techImg
-    techName
-    techDescription */
   let techImg = document.getElementById("techImg");
   techImg.src = objeto.technology[itemValue].images.portrait;
   let techName = document.getElementById("techName");
@@ -184,13 +173,3 @@ const renderTech = (itemValue) => {
   let description = document.getElementById("techdescription");
   description.textContent = objeto.technology[itemValue].description;
 };
-/* technology: [
-    {
-      name: "Launch vehicle",
-      images: {
-        portrait: "./assets/technology/image-launch-vehicle-portrait.jpg",
-        landscape: "./assets/technology/image-launch-vehicle-landscape.jpg",
-      },
-      description:
-        "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
-    }, */
