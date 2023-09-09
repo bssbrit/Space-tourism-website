@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;700&family=Bellefair&display=swap");
 
-/* font-family: 'Barlow', sans-serif;
-font-family: 'EB Garamond', serif;
-font-family: 'Roboto Condensed', sans-serif;
- */
 * {
   padding: 0;
   margin: 0;
@@ -331,7 +327,7 @@ h3 {
 
 /* Ipad */
 
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 600px) and (max-width: 920px) {
   .container {
     background-image: url("../assets/home/background-home-tablet.jpg");
   }
@@ -359,6 +355,7 @@ h3 {
   .homeContent p {
     padding: 0 7rem 0 7rem;
   }
+
   .destination-container {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
   }
@@ -409,5 +406,37 @@ h3 {
   .techOptions {
     padding-top: 1rem;
     flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+  }
+
+  .weirdLine {
+    height: 0;
+  }
+  .menu {
+    font-weight: 800;
+  }
+  .menu li span {
+    display: none;
+  }
+  .body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem 0 2rem;
+  }
+  .homeContent {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .bodyLeftSide p {
+    padding: 0;
+  }
+  .bodyRightSide {
+    justify-content: flex-start;
   }
 }
