@@ -57,7 +57,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .menu li {
@@ -424,7 +424,7 @@ h3 {
   }
   .header {
     padding: 1px;
-    font-size: 10px;
+    font-size: 4px;
   }
   .body {
     flex-direction: column;
@@ -438,8 +438,7 @@ h3 {
     text-align: center;
   }
   .bodyLeftSide {
-    padding-top: 2%;
-    align-items: flex-start;
+    align-items: center;
   }
   .bodyLeftSide p {
     padding: 0;
@@ -452,7 +451,7 @@ h3 {
   }
   #planetImg {
     animation: rotateImage 25s linear infinite; /* Adjust duration as needed */
-    height: 220px;
+    height: 200px;
   }
   h1 {
     font-size: 3rem;
@@ -470,9 +469,14 @@ h3 {
     order: -1;
     width: 100%;
   }
+  .destinations {
+    font-size: 12px;
+  }
   .crewPhoto {
+    height: 100%;
     background-size: contain;
     background-position: center;
+
     border-bottom: 1px solid gray;
   }
   .crewInfo {
